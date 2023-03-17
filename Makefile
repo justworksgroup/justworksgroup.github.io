@@ -5,17 +5,17 @@ STDOUT=> /dev/null 2>&1
 JEKYLL=bundle exec jekyll
 
 build: .clear .install
-	@$(JEKYLL) build -s src
+	@$(JEKYLL) build
 	@npm run build
 
 install: .clear
 	@npm install
 
 server: .clear .install
-	@npx concurrently "$(JEKYLL) serve -s src --livereload --drafts" "npm run watch"
+	@npx concurrently "$(JEKYLL) serve --livereload --drafts" "npm run watch"
 
 clean:
-	@rm -Rf build dist _site src/css src/.jekyll-cache *.log
+	@rm -Rf build dist _site assets/css .jekyll-cache *.log
 
 reset: .clear clean
 	@rm -Rf node_modules package-lock.json yarn.lock Gemfile.lock .data .dockerdata
