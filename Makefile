@@ -6,18 +6,19 @@ JEKYLL=bundle exec jekyll
 
 build: .clear
 	@$(JEKYLL) build -s src
+	@npm run build
 
 install: .clear
 	@npm install
 
 server: .clear
-	@$(JEKYLL) serve -s src --watch --drafts
+	@npx concurrently "$(JEKYLL) serve -s src --livereload --drafts" "npm run watch"
 
 clean:
-	@rm -Rf build dist _site *.log
+	@rm -Rf build dist _site src/css src/.jekyll-cache *.log
 
 reset: .clear clean
-	@rm -Rf node_modules package-lock.json yarn.lock test.js .data .dockerdata
+	@rm -Rf node_modules package-lock.json yarn.lock Gemfile.lock .data .dockerdata
 
 .clear:
 	@clear
