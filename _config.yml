@@ -18,4 +18,10 @@ plugins:
 
 exclude:
     - styles
+    - CNAME
+    - README.md
+    - Makefile
+    - package.json
+    - package-lock.json
+    - tailwind.config.js
 

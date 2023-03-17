@@ -24,4 +24,4 @@ package-lock.json
 yarn.lock
 Gemfile.lock
 _site
-src/css
+assets/css
