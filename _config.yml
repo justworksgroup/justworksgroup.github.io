@@ -13,10 +13,8 @@ future   : false
 # Blog
 
 # Build settings
-source     : .
-destination: ./_site
-
 theme: minima
+
 plugins:
   - jekyll-feed
 
