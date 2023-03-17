@@ -7,6 +7,9 @@ Thumbs.db
 .idea
 .dockerdata
 .data
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
 *.db
 *.bak
 *.swp
@@ -16,6 +19,8 @@ build/*
 coverage/*
 dist/*
 node_modules/*
+vendor
 package-lock.json
 yarn.lock
-src/css/main.css
+Gemfile.lock
+_site
