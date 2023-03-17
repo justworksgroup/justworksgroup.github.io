@@ -12,7 +12,7 @@ install: .clear
 	@npm install
 
 server: .clear
-	@npx concurrently "$(JEKYLL) serve -s src --watch --drafts" "npm run watch"
+	@npx concurrently "$(JEKYLL) serve -s src --livereload --drafts" "npm run watch"
 
 clean:
 	@rm -Rf build dist _site src/css src/.jekyll-cache *.log
