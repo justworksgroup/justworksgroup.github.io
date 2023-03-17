@@ -19,6 +19,7 @@ plugins:
   - jekyll-feed
 
 exclude:
+    - docs
     - styles
     - CNAME
     - README.md
