@@ -5,19 +5,19 @@ STDOUT=> /dev/null 2>&1
 JEKYLL=bundle exec jekyll
 
 build: .clear
-	@$(JEKYLL) build
+	@$(JEKYLL) build -s src
 
 install: .clear
 	@npm install
 
 server: .clear
-	@$(JEKYLL) serve --watch --drafts
+	@$(JEKYLL) serve -s src --watch --drafts
 
 clean:
 	@rm -Rf build dist _site *.log
 
 reset: .clear clean
-	@rm -Rf node_modules package-lock.json yarn.lock test.js .data .dockerdata .jekyll-cache
+	@rm -Rf node_modules package-lock.json yarn.lock test.js .data .dockerdata
 
 .clear:
 	@clear

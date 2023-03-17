@@ -53,10 +53,3 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-
-exclude:
-    - CNAME
-    - README.md
-    - package.json
-    - Makefile
-    - tailwind.config.js
