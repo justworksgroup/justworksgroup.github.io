@@ -4,14 +4,14 @@ VERSION=$(shell sed 's/[\", ]//g' package.json | grep version | cut -d: -f2)
 STDOUT=> /dev/null 2>&1
 JEKYLL=bundle exec jekyll
 
-build: .clear
+build: .clear .install
 	@$(JEKYLL) build -s src
 	@npm run build
 
 install: .clear
 	@npm install
 
-server: .clear
+server: .clear .install
 	@npx concurrently "$(JEKYLL) serve -s src --livereload --drafts" "npm run watch"
 
 clean:
@@ -22,6 +22,9 @@ reset: .clear clean
 
 .clear:
 	@clear
+
+.install:
+	@[ -d node_modules ] || make install
 
 help: .clear
 	@echo "${DESC} (${NAME} - ${VERSION})"
