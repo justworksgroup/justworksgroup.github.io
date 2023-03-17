@@ -21,7 +21,7 @@ Site institucional da empresa [Justworks Group](http://justworksgroup.com.br).
 LICENSE
 =======
 
-Copyright (c) 2023 Leonardo Thibes
+Copyright (c) 2023 Justworks Group
 
 The MIT License
 
