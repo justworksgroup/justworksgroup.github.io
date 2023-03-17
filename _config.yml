@@ -22,8 +22,8 @@ exclude:
     - docs
     - styles
     - CNAME
-    - README.md
     - Makefile
+    - README.md
     - package.json
     - package-lock.json
     - tailwind.config.js
