@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "description": "Site institucional da empresa",
   "scripts": {
-    "build": "npx tailwindcss -i ./styles/tailwind.css -o ./_site/css/main.css",
-    "watch": "npx tailwindcss -i ./styles/tailwind.css -o ./css/main.css --watch"
+    "build": "npx tailwindcss -i ./styles/tailwind.css -o ./_site/assets/css/main.css",
+    "watch": "npx tailwindcss -i ./styles/tailwind.css -o ./assets/css/main.css --watch"
   },
   "devDependencies": {
     "concurrently": "^7.6.0",
