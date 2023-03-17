@@ -13,16 +13,12 @@ future   : false
 # Blog
 
 # Social
-twitter_username: jekyllrb
-github_username:  jekyll
+social_whatsapp: https://github.com/justworksgroup
+social_github  : https://github.com/justworksgroup
+social_linkedin: https://github.com/justworksgroup
 # Social
 
 # Build
-theme: minima
-
-plugins:
-  - jekyll-feed
-
 exclude:
     - docs
     - styles
