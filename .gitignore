@@ -22,4 +22,5 @@ node_modules/*
 vendor
 package-lock.json
 yarn.lock
+Gemfile.lock
 _site
