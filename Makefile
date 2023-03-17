@@ -2,31 +2,22 @@ NAME=$(shell sed 's/[\", ]//g' package.json | grep name | cut -d: -f2 | head -1)
 DESC=$(shell sed 's/[\",]//g' package.json | grep description | cut -d: -f2 | sed -e 's/^[ \t]*//')
 VERSION=$(shell sed 's/[\", ]//g' package.json | grep version | cut -d: -f2)
 STDOUT=> /dev/null 2>&1
+JEKYLL=bundle exec jekyll
 
 build: .clear
-	@echo "Building frontend..."
-	@rm -Rf build && mkdir build
-	@[ -f src/css/main.css ] || npm run build ${STDOUT}
-	@cp -Rf src/* build
-	@[ -d dist ] || mkdir dist
-	@cp -Rf Dockerfile build dist
-	@rm -f dist/${NAME}-${VERSION}.zip
-	@cd dist && zip -r ${NAME}-${VERSION}.zip Dockerfile build ${STDOUT}
-	@cd dist && rm -Rf Dockerfile build
-	@echo "Finished!"
+	@$(JEKYLL) build
 
 install: .clear
 	@npm install
-	@[ -d src/css ] || mkdir src/css
 
 server: .clear
-	@npm run watch
+	@$(JEKYLL) serve --watch --drafts
 
 clean:
-	@rm -Rf build dist *.log src/css/main.css
+	@rm -Rf build dist _site *.log
 
 reset: .clear clean
-	@rm -Rf node_modules package-lock.json yarn.lock test.js .data .dockerdata
+	@rm -Rf node_modules package-lock.json yarn.lock test.js .data .dockerdata .jekyll-cache
 
 .clear:
 	@clear
