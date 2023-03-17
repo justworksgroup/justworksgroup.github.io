@@ -1,0 +1,12 @@
+{
+  "name": "justworksgroup-site",
+  "version": "0.1.0",
+  "description": "Site institucional da empresa",
+  "scripts": {
+    "build": "npx tailwindcss -i styles/tailwind.css -o ./src/css/main.css",
+    "watch": "npx tailwindcss -i styles/tailwind.css -o ./src/css/main.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.2.7"
+  }
+}
