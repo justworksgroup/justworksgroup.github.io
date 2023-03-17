@@ -36,4 +36,4 @@ help: .clear
 	@echo "  help               Exibe esta mensagem de HELP"
 	@echo ""
 
-.PHONY: build dist
+.PHONY: build dist _site
