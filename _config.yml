@@ -12,7 +12,7 @@ permalink: /:title.html
 future   : false
 # Blog
 
-# Build settings
+# Build
 theme: minima
 
 plugins:
@@ -28,4 +28,4 @@ exclude:
     - package-lock.json
     - tailwind.config.js
 
-# Build settings
+# Build
