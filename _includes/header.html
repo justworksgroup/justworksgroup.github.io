@@ -17,7 +17,7 @@
         <div class="flex items-center justify-between">
 
             <!-- LOGO -->
-            <div class="pt-2">
+            <div class="pt-4">
                 <img src="/assets/img/logo-1.png" alt="logo">
             </div>
             <!-- LOGO -->
@@ -32,10 +32,23 @@
             <!-- MENU ITEMS -->
 
             <!-- SOCIAL -->
-            <div>
-                <a href="{{ site.social_whatsapp }}" target="_blank">WhatsApp</a>
-                <a href="{{ site.social_github }}" target="_blank">Github</a>
-                <a href="{{ site.social_linkedin }}" target="_blank">LinkedIn</a>
+            <div class="flex space-x-4">
+
+                <div class="flex space-x-2">
+                    <img class="w-6 h-6" src="/assets/img/social/whatsapp.svg" alt="whatsapp">
+                    <a class="text-primaryColor" href="{{ site.social_whatsapp }}" target="_blank">WhatsApp</a>
+                </div>
+
+                <div class="flex space-x-2">
+                    <img class="w-6 h-6 pb-1" src="/assets/img/social/linkedin.svg" alt="whatsapp">
+                    <a class="text-primaryColor" href="{{ site.social_linkedin }}" target="_blank">LinkedIn</a>
+                </div>
+
+                <div class="flex space-x-2">
+                    <img class="w-6 h-6" src="/assets/img/social/github.svg" alt="whatsapp">
+                    <a class="text-primaryColor" href="{{ site.social_github }}" target="_blank">Github</a>
+                </div>
+
             </div>
             <!-- SOCIAL -->
 
