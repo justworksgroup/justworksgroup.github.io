@@ -3,16 +3,23 @@ SITE
 
 Site institucional da empresa [Justworks Group](http://justworksgroup.com.br).
 
-#### REFERENCES:
+#### INSTALAÇÃO:
 
- * Configuração de DNS: https://www.youtube.com/watch?v=qJSM8oCB3mU
- * Estrutura do Jekyll: https://github.com/leonardothibes/leonardothibes.github.com/tree/1.0.1
+```bash
+sudo gem install bundler jekyll
+make install
+```
 
 #### TECNOLOGIAS UTILIZADAS:
 
  * Jekyll      : https://jekyllrb.com
  * Tailwind CSS: https://tailwindcss.com
  * GNU/Make    : https://www.gnu.org/software/make
+
+#### REFERENCES:
+
+ * Configuração de DNS: https://www.youtube.com/watch?v=qJSM8oCB3mU
+ * Estrutura do Jekyll: https://github.com/leonardothibes/leonardothibes.github.com/tree/1.0.1
 
 #### AUTHOR
 
