@@ -12,12 +12,13 @@ permalink: /:title.html
 future   : false
 # Blog
 
+# Social
+social_whatsapp: https://github.com/justworksgroup
+social_github  : https://github.com/justworksgroup
+social_linkedin: https://github.com/justworksgroup
+# Social
+
 # Build
-theme: minima
-
-plugins:
-  - jekyll-feed
-
 exclude:
     - docs
     - styles
