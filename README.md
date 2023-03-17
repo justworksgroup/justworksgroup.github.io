@@ -12,8 +12,8 @@ make install
 
 #### TECNOLOGIAS UTILIZADAS:
 
- * Jekyll      : https://jekyllrb.com
- * Tailwind CSS: https://tailwindcss.com
+ * Jekyll      : https://jekyllrb.com/docs
+ * Tailwind CSS: https://tailwindcss.com/docs
  * GNU/Make    : https://www.gnu.org/software/make
 
 #### REFERENCES:
