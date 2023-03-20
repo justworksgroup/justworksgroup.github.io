@@ -2,8 +2,82 @@
     <!-- PAGE CONTENT -->
 
     <!-- FOOTER -->
-    <footer class="w-full text-center text-sm">
-        {% include all-rights.reserved.html %}
+    <footer class="bg-[url('/assets/img/footer.png')] bg-center bg-no-repeat bg-cover space-y-6 text-background">
+
+        <!-- ROW 1 -->
+        <div class="flex justify-center pt-14">
+            <img src="/assets/img/logo.svg" alt="logo footer">
+        </div>
+        <!-- ROW 1 -->
+
+        <!-- ROW 2 -->
+        <div class="w-full lg:px-24">
+
+            <div class="md:flex items-center justify-between">
+
+                <!-- SOLUTIONS -->
+                <div class="w-1/4 text-left">
+                    <h4 class="text-xl font-bold pb-4">Soluções</h4>
+                    <ul>
+                        <li><a class="hover:text-gray-600" href="#">Alocação de profissionais</a></li>
+                        <li><a class="hover:text-gray-600" href="#">Desenvolvimento de Software</a></li>
+                        <li><a class="hover:text-gray-600" href="#">Consultoria em TI</a></li>
+                        <li><a class="hover:text-gray-600" href="#">Terceirização Total de TI</a></li>
+                    </ul>
+                </div>
+                <!-- SOLUTIONS -->
+
+                <!-- ABOUT US -->
+                <div class="w-1/4 text-center">
+                    <a class="hover:text-gray-600" href="#">Sobre Nós</a>
+                </div>
+                <!-- ABOUT US -->
+
+                <!-- CAREERS -->
+                <div class="w-1/4 text-center">
+                    <a class="hover:text-gray-600" href="#">Trabalhe Conosco</a>
+                </div>
+                <!-- CAREERS -->
+
+                <!-- CONTACT -->
+                <div class="w-1/4 text-left">
+                    <h4 class="text-xl font-bold pb-4">Contato</h4>
+                    <ul>
+                        <li class="flex space-x-2">
+                            <img class="w-6 h-6 pb-1" src="/assets/img/icons/whatsapp.svg" alt="whatsapp">
+                            <span>{{site.phone}}</span>
+                        </li>
+                        <li class="flex space-x-2">
+                            <img class="w-6 h-6 pb-1" src="/assets/img/icons/email.svg" alt="email">
+                            <span><a class="hover:text-gray-600" href="mailto:{{site.email}}">{{site.email}}</a></span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- CONTACT -->
+
+            </div>
+
+        </div>
+        <!-- ROW 2 -->
+
+        <!-- ROW 3 -->
+        <div class="w-full lg:px-24">
+
+            <div class="flex items-center justify-between">
+                <div class="text-center bg-yellow-200">COL 1</div>
+                <div class="text-center bg-green-200">COL 2</div>
+                <div class="text-center bg-blue-200">COL 3</div>
+            </div>
+
+        </div>
+        <!-- ROW 3 -->
+
+        <!-- ROW 4 -->
+        <div class="bottom-0 text-center text-sm">
+            {% include all-rights.reserved.html %}
+        </div>
+        <!-- ROW 4 -->
+
     </footer>
     <!-- FOOTER -->
 
