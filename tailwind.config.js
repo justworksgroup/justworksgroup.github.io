@@ -16,7 +16,7 @@ module.exports = {
                 secondaryDark : '#4D5267',
                 background    : '#EDF3F6',
                 mobileMenuText: '#EDF3F6',
-                mobileMenuBg  : '#6D7284',
+                mobileMenuBg  : '#919A9A',
             },
         },
     },
