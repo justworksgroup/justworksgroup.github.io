@@ -10,7 +10,8 @@
 <body class="bg-background">
 
     <!-- NAVBAR -->
-    <nav class="fixed container mx-auto lg:px-24 sm:px-10 mb-24 pb-6 bg-background">
+    <!-- <nav class="fixed container mx-auto lg:px-24 sm:px-10 mb-24 pb-6 bg-background"> -->
+    <nav class="fixed w-full lg:px-24 sm:px-10 mb-24 pb-6 bg-background">
 
         <!-- FLEX CONTAINER -->
         <div class="flex items-center justify-between">
@@ -66,7 +67,43 @@
     <!-- NAVBAR -->
 
     <!-- MOBILE MENU -->
+    <div id="menu" class="bg-mobileMenuBg mt-20 fixed flex-col w-full space-y-5 text-center hidden">
+
+        <!-- HEADING -->
+        <h2 class="mt-5 text-3xl text-mobileMenuText font-bold">Menu</h2>
+
+        <!-- MENU ITEMS -->
+        <div class="flex flex-col space-y-4 text-mobileMenuText text-xl">
+            <a href="#">Soluções</a>
+            <a href="#">Sobre Nós</a>
+            <a href="#">Trabalhe Conosco</a>
+            <a href="#">Contato</a>
+        </div>
+        <!-- MENU ITEMS -->
+
+        <!-- SOCIAL -->
+        <div class="flex flex-col space-y-4 pb-5 mx-auto text-mobileMenuText text-xl">
+
+            <div class="flex space-x-2">
+                <img class="w-6 h-6" src="/assets/img/social/whatsapp.svg" alt="whatsapp">
+                <a href="{{ site.social_whatsapp }}" target="_blank">WhatsApp</a>
+            </div>
+
+            <div class="flex space-x-2">
+                <img class="w-6 h-6" src="/assets/img/social/linkedin.svg" alt="linkedin">
+                <a href="{{ site.social_linkedin }}" target="_blank">LinkedIn</a>
+            </div>
+
+            <div class="flex space-x-2">
+                <img class="w-6 h-6" src="/assets/img/social/github.svg" alt="github">
+                <a href="{{ site.social_github }}" target="_blank">Github</a>
+            </div>
+
+        </div>
+        <!-- SOCIAL -->
+
+    </div>
     <!-- MOBILE MENU -->
 
     <!-- PAGE CONTENT -->
-    <main class="pt-24">
+    <main class="pt-24 container mx-auto">
