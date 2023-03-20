@@ -6,6 +6,10 @@ body {
     font-family: sans-serif;
 }
 
+footer {
+    height: 507px;
+}
+
 /* HAMBURGER MENU */
 .hamburger {
     cursor: pointer;
